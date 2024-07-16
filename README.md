@@ -40,6 +40,7 @@ To get started with this project, you'll need to follow these steps:
 4. Once `pipenv` is installed, navigate to the project directory and run the following command to install the project dependencies:
 
     ```shell
+    pipenv shell
     pipenv install
     ```
 5. After installing the prereq packages, run the streamlit app locally. Specify the dashboard you want to run. Example below:
