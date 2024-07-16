@@ -8,7 +8,7 @@ import datetime
 # Returns a Pandas DataFrame
 @st.cache_data
 def load_table():
-    return conn.query("SELECT * from ISSUES_V1 WHERE group_public_id!='dd404c7d-4cfd-425a-8128-036e73755b8e';", ttl=600)
+    return conn.query("SELECT * from ISSUES_V1;", ttl=600)
 
 # Get the current credentials
 conn = st.connection("snowflake")
