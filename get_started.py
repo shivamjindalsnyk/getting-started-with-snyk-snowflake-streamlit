@@ -22,7 +22,7 @@ with st.sidebar:
              Feel free to take any of the code snippets and use them in your own projects. \n\n This first page
              is focused just on getting the data from Snowflake and showing a simple representation of the data.
              \n\n With each of these, the code is to serve as starter code. There may be bugs, there may be issues but 
-             hopefully it can help you get started with getting value out of Snyk quickly :)
+             hopefully it can help you get started with getting value out of Snyk's Snowflake integration quickly :)
             """)
 
 # Bar Chart of Open and Resolved Issues
