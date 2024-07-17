@@ -11,6 +11,8 @@ In any case, this repo is to serve for **demo purposes only**. The SLA dashboard
 
 For full Streamlit documentation, see [here](https://docs.streamlit.io/)
 
+> **Note:**  Table and fields names for demo purposes only, please refer to documentation and Snowflake for current specifications.
+
 ## Getting Started
 
 To get started with this project, you'll need to follow these steps:

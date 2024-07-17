@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+# NOTE: Table and fields names for demo purposes only, please refer to documentation and Snowflake for current specifications.
 
 # Load the table as a dataframe using the Snowpark Session.
 # Returns a Pandas DataFrame
