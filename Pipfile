@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 streamlit = "*"
 snowflake-connector-python = "*"
+ghapi = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

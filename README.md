@@ -2,10 +2,11 @@
 
 This is a demo of how to get started with Snyk's Snowflake integration. More info on this integration can be found in our docs [here](https://docs.snyk.io/manage-risk/reporting/reporting-and-bi-integrations-snowflake-data-share).
 
-This repo has three example files with varying levels of complexity.
+This repo has four example files with varying levels of complexity.
 - get_started: how to retrieve data from snowflake and display it in a bar chart or as a table
 - quickstart: a bit more complex, showing various ways to create filters
 - sla dashboard: a more realistic example of a type of dashboard a customer may want to work with
+- pr-checks: another realistic example of a type of dashboard a customer may want to work with, also leveraging and correlating results with the GitHub API
 
 In any case, this repo is to serve for **demo purposes only**. The SLA dashboard in particular is not endorsed by Snyk and is not necessarily how Snyk's own SLA dashboard calculates SLAs etc. Some of the code likely does have bugs but hopefully it can serve as inspiration for how you may work with Snyk's Snowflake integration if you wish to build on top of Streamlit
 
@@ -33,6 +34,12 @@ To get started with this project, you'll need to follow these steps:
     client_session_keep_alive = true
     ```
 
+    Also add your GH Secret to a `.env` file in the root directory if you are using the PR Check dashboard. NOTE: You need a token with fine grained access for the PR Check dashboard. See `GH_Permissions.png` for permissions required for the token.
+
+    ```
+    GH_TOKEN=
+    ```
+
 3. Install `pipenv` if you haven't already. You can install it using the following command:
 
     ```shell
@@ -48,5 +55,5 @@ To get started with this project, you'll need to follow these steps:
 5. After installing the prereq packages, run the streamlit app locally. Specify the dashboard you want to run. Example below:
 
     ```shell
-    streamlit run get_started.py
+    streamlit run 0_get_started.py
     ```
